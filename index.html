@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gestión de Usuarios</title>
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
   <div id="login-container">
-    <h1>PANEL ADMINISTRATIVO</h1>
+    <div><img src="https://clubox.top/club/Imagenes/admin.png" width="95%"></div>
     <form id="admin-login-form">
       <input type="email" id="admin-login-email" placeholder="Correo electrónico" required>
       <input type="password" id="admin-login-password" placeholder="Contraseña" required>
@@ -19,16 +21,16 @@
 
   <div id="user-management-container" class="hidden">
     <header>
-      <h1>Gestión de Usuarios</h1>
+      <h1>CREAR USUARIO</h1>
       <nav>
         <ul class="nav-links">
-          <li><a href="channels_generator.html" id="link-channels">Canales</a></li>
-          <li><a href="movies_generator.html" id="link-movies">Películas</a></li>
-          <li><a href="series_generator.html" id="link-series">Series</a></li>
-          <li><a href="featuredVideos_dashboard.html" id="link-ads">Publicidad</a></li>
+          <li><a href="channels_generator.html" id="link-channels">C A N A L E S</a></li>
+          <li><a href="movies_generator.html" id="link-movies">P E L I C U L A S</a></li>
+          <li><a href="series_generator.html" id="link-series">S E R I E S</a></li>
+          <li><a href="featuredVideos_dashboard.html" id="link-ads">P U B L I C I D A D</a></li>
         </ul>
       </nav>
-      <button id="logout-btn">Cerrar sesión</button>
+      <button id="logout-btn">Cerrar Sección</button>
     </header>
     <section>
       <h2>Crear Usuario</h2>
@@ -73,4 +75,5 @@
   <script src="https://www.gstatic.com/firebasejs/9.21.0/firebase-firestore-compat.js"></script>
   <script src="script.js"></script>
 </body>
+
 </html>
