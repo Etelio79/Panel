@@ -27,7 +27,6 @@
           <li><a href="movies_generator.html" id="link-movies">P E L I C U L A S</a></li>
           <li><a href="series_generator.html" id="link-series">S E R I E S</a></li>
           <li><a href="featuredVideos_dashboard.html" id="link-ads">P U B L I C I D A D</a></li>
-          <li><a href="user-list.html" id="link-user-list">LISTA DE USUARIOS</a></li>
         </ul>
       </nav>
       <button id="logout-btn">Cerrar Sección</button>
@@ -42,12 +41,38 @@
         <button type="submit">Crear Usuario</button>
       </form>
     </section>
+    <section>
+      <h2>Lista de Usuarios</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Nombre de Usuario</th>
+            <th>Correo</th>
+            <th>Contraseña</th>
+            <th>Fecha de Expiración</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody id="user-list"></tbody>
+      </table>
+    </section>
+    <section>
+      <h2>Dispositivos del Usuario</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Nombre del Dispositivo</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody id="device-list"></tbody>
+      </table>
+    </section>
   </div>
-
-  <!-- Scripts Firebase y lógica común -->
   <script src="https://www.gstatic.com/firebasejs/9.21.0/firebase-app-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/9.21.0/firebase-auth-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/9.21.0/firebase-firestore-compat.js"></script>
   <script src="script.js"></script>
 </body>
+
 </html>
