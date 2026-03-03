@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LISTA DE USUARIOS</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>LISTA DE USUARIOS</h1>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Usuario</th>
+        <th>Correo</th>
+        <th>Contraseña</th>
+        <th>Expiración</th>
+        <th>Acciones</th>
+      </tr>
+    </thead>
+    <tbody id="user-list"></tbody>
+  </table>
+
+  <h2>DISPOSITIVOS DEL USUARIO</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Nombre del Dispositivo</th>
+        <th>Acciones</th>
+      </tr>
+    </thead>
+    <tbody id="device-list"></tbody>
+  </table>
+
+  <script src="https://www.gstatic.com/firebasejs/9.21.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.21.0/firebase-firestore-compat.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
+ 
